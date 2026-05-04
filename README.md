@@ -117,7 +117,7 @@ cd ufc-site
 **Uriel ADABRA**
 - 🎓 Étudiant en Développement d'Applications — ESGIS Lomé, Togo
 - 📧 adabraemmanueluriel@gmail.com
-- 🐙 GitHub : [@uriel-adabra](https://github.com/uriel-adabra)
+- 🐙 GitHub : [@uriel-adabra](https://github.com/uriel-joker)
 
 ---
 
@@ -132,4 +132,4 @@ Il m'a permis de mettre en pratique :
 
 ---
 
-*© 2025 Uriel ADABRA — Projet ESGIS Lomé 🇹🇬*
+*© 2026 Uriel ADABRA — Projet ESGIS Lomé 🇹🇬*
