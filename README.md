@@ -1,5 +1,5 @@
 
-[README (1).md](https://github.com/user-attachments/files/27372969/README.1.md)
+[README .md](https://github.com/user-attachments/files/27372969/README.1.md)
 # 🥊 Site UFC — Ultimate Fighting Championship
 
 ![UFC](https://img.shields.io/badge/UFC-Site%20Web-e8001d?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48dGV4dCB5PSIuOWVtIiBmb250LXNpemU9IjkwIj7wn5qqPC90ZXh0Pjwvc3ZnPg==)
@@ -94,21 +94,6 @@ ufc-site/
 | **JavaScript (Vanilla)** | Interactivité, filtres, lightbox |
 | **Google Fonts** | Bebas Neue, Barlow Condensed |
 | **Formspree** | Envoi des messages du formulaire |
-
----
-
-## 🚀 Lancer le projet localement
-
-```bash
-# 1. Cloner le repository
-git clone https://github.com/uriel-joker/ufc-site.git
-
-# 2. Ouvrir le dossier
-cd ufc-site
-
-# 3. Ouvrir index.html dans ton navigateur
-# (double-clic sur index.html ou utiliser Live Server sur VS Code)
-```
 
 ---
 
