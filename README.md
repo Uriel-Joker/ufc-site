@@ -13,7 +13,7 @@
 
 ## 🌐 Voir le site en ligne
 
-🔗 **[uriel-ufc.netlify.app](https://uriel-ufc.netlify.app)** *(à mettre à jour après déploiement)*
+🔗 **[uriel-ufc.netlify.app](https://uriel-ufc.netlify.app)**
 
 ---
 
@@ -101,7 +101,7 @@ ufc-site/
 
 ```bash
 # 1. Cloner le repository
-git clone https://github.com/uriel-adabra/ufc-site.git
+git clone https://github.com/uriel-joker/ufc-site.git
 
 # 2. Ouvrir le dossier
 cd ufc-site
