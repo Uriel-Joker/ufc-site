@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="UFC – Ultimate Fighting Championship. Histoire, combattants légendaires et entraînement MMA."
+    />
+    <title>UFC – Ultimate Fighting Championship</title>
+    <!-- FAVICON SVG inline -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div id="progress-bar"></div>
+    <div id="loader">
+      <h1>UFC</h1>
+      <div class="loader-line"></div>
+    </div>
+    <button id="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <header>
+      <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 185 58"
+              height="36"
+              aria-label="UFC"
+            >
+              <text
+                x="0"
+                y="50"
+                font-family="Arial Black, Impact, sans-serif"
+                font-weight="900"
+                font-style="italic"
+                font-size="62"
+                fill="currentColor"
+                letter-spacing="-3"
+              >
+                UFC
+              </text>
+            </svg>
+          </span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="histoire.html" class="nav-link">Histoire</a></li>
+          <li><a href="combattants.html" class="nav-link">Combattants</a></li>
+          <li><a href="entrainement.html" class="nav-link">Entraînement</a></li>
+          <li><a href="categories.html" class="nav-link">Catégories</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-img-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Depuis 1993 &nbsp;·&nbsp; Plus de 175 pays</p>
+        <h1 class="hero-title">Ultimate<span>Fighting</span></h1>
+        <p class="hero-sub">
+          L'organisation de sports de combat la plus prestigieuse au monde.
+          Boxe, Jiu-Jitsu, Muay-Thaï, Lutte — tout dans l'octogone.
+        </p>
+        <div class="hero-cta">
+          <a href="histoire.html" class="btn btn-primary"
+            >Découvrir l'histoire</a
+          >
+          <a href="combattants.html" class="btn btn-secondary"
+            >Les combattants</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ── COMPTEURS ANIMÉS ──────────────────────────────── -->
+    <div class="counter-section">
+      <div class="counters-grid section" style="padding: 0; max-width: 100%">
+        <div class="counter-item scroll-anim">
+          <span class="counter-num" data-target="175" data-suffix="+">0</span>
+          <span class="counter-label">Pays diffusés</span>
+        </div>
+        <div class="counter-item scroll-anim">
+          <span class="counter-num" data-target="700" data-suffix="+">0</span>
+          <span class="counter-label">Combattants actifs</span>
+        </div>
+        <div class="counter-item scroll-anim">
+          <span class="counter-num" data-target="42" data-suffix="">0</span>
+          <span class="counter-label">Événements par an</span>
+        </div>
+        <div class="counter-item scroll-anim">
+          <span class="counter-num" data-target="1993" data-suffix="">0</span>
+          <span class="counter-label">Année de fondation</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PRÉSENTATION ──────────────────────────────────── -->
+    <section class="section scroll-anim">
+      <p class="section-label">Le sport</p>
+      <h2 class="section-title">Qu'est-ce que l'UFC ?</h2>
+      <div class="section-divider"></div>
+      <p
+        style="
+          color: var(--muted);
+          max-width: 700px;
+          margin-bottom: 48px;
+          line-height: 1.7;
+        "
+      >
+        L'UFC regroupe des combattants de toutes disciplines — Boxe, Jiu-Jitsu
+        brésilien, Karaté, Kickboxing et Muay-Thaï — qui s'affrontent dans
+        l'<strong style="color: var(--light)">octogone</strong>, une cage
+        mythique à huit côtés devenue le symbole mondial de ce sport.
+      </p>
+      <div class="feature-grid">
+        <a href="histoire.html" class="feature-card scroll-anim">
+          <span class="feature-icon">🥊</span>
+          <h3>Histoire</h3>
+          <p>
+            Fondée en 1993, découvrez l'évolution de l'UFC jusqu'à son statut
+            actuel de leader mondial des sports de combat.
+          </p>
+        </a>
+        <a href="combattants.html" class="feature-card scroll-anim">
+          <span class="feature-icon">🏆</span>
+          <h3>Combattants</h3>
+          <p>
+            McGregor, Khabib, Adesanya et 5 autres légendes — recherchez,
+            filtrez et explorez leur palmarès.
+          </p>
+        </a>
+        <a href="entrainement.html" class="feature-card scroll-anim">
+          <span class="feature-icon">💪</span>
+          <h3>Entraînement</h3>
+          <p>
+            Préparation physique intense, techniques de frappe, grappling — la
+            rigueur des champions de l'octogone.
+          </p>
+        </a>
+        <a href="categories.html" class="feature-card scroll-anim">
+          <span class="feature-icon">⚖️</span>
+          <h3>Catégories</h3>
+          <p>
+            12 catégories de poids, hommes et femmes. Découvrez les champions
+            actuels et les règles de chaque division.
+          </p>
+        </a>
+        <a href="histoire.html#fondateurs" class="feature-card scroll-anim">
+          <span class="feature-icon">📖</span>
+          <h3>Les Fondateurs</h3>
+          <p>
+            Art Davie et Rorion Gracie — deux visionnaires qui ont créé
+            l'organisation de combat la plus regardée au monde.
+          </p>
+        </a>
+        <a href="contact.html" class="feature-card scroll-anim">
+          <span class="feature-icon">✉️</span>
+          <h3>Contact</h3>
+          <p>
+            Une suggestion, un retour sur le site ? Envoyez-moi un message via
+            le formulaire de contact.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── OCTOGONE BANNER ────────────────────────────────── -->
+    <div class="octogone-banner">
+      <img src="Images/octogone.jpeg" alt="L'octogone UFC vu du ciel" />
+      <div class="octogone-banner-content">
+        <h2>L'Octogone</h2>
+        <p>Le temple des champions — 29,5 m² où se décident les destins</p>
+      </div>
+    </div>
+
+    <!-- ── DISCIPLINES ────────────────────────────────────── -->
+    <section class="section scroll-anim">
+      <p class="section-label">Les disciplines</p>
+      <h2 class="section-title">Pourquoi ce sport est unique ?</h2>
+      <div class="section-divider"></div>
+      <p
+        style="
+          color: var(--muted);
+          max-width: 700px;
+          margin-bottom: 44px;
+          line-height: 1.7;
+        "
+      >
+        L'UFC réunit les meilleures techniques de combat issues de disciplines
+        du monde entier. Chaque combattant est un athlète complet, maîtrisant
+        debout, en lutte et au sol.
+      </p>
+      <div class="disciplines-img-wrap">
+        <img
+          src="Images/STYLE_DE_COMBATS.png"
+          alt="Les différents styles de combat en MMA"
+        />
+      </div>
+    </section>
+
+    <!-- ── À PROPOS ────────────────────────────────────────── -->
+    <section class="section scroll-anim">
+      <p class="section-label">Le créateur</p>
+      <h2 class="section-title">À Propos</h2>
+      <div class="section-divider"></div>
+      <div class="about-wrap">
+        <div class="about-aside">
+          <p class="about-name">Uriel<br />ADABRA</p>
+          <span class="about-role">Développeur Web · ESGIS</span>
+        </div>
+        <div class="about-body">
+          <p>
+            Étudiant en développement d'applications à ESGIS Lomé, je suis
+            passionné par les sports de combat et le développement web. Ce site
+            est un projet pour approfondir mes compétences en HTML, CSS et
+            JavaScript tout en partageant ma passion pour l'UFC.
+          </p>
+          <p>
+            Ce sport développe la force mentale, la discipline et la confiance
+            en soi — des valeurs que je retrouve aussi dans la programmation.
+          </p>
+          <ul class="skills-list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Design Web</li>
+            <li>Responsive</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 185 58"
+          height="28"
+          aria-label="UFC"
+        >
+          <text
+            x="0"
+            y="50"
+            font-family="Arial Black, Impact, sans-serif"
+            font-weight="900"
+            font-style="italic"
+            font-size="62"
+            fill="currentColor"
+            letter-spacing="-3"
+          >
+            UFC
+          </text>
+        </svg>
+      </span>
+      <p>
+        © 2026 <strong>Uriel ADABRA</strong> — Projet ESGIS &nbsp;·&nbsp; Site
+        dédié à
+        <a href="https://www.ufc.com" target="_blank" rel="noopener">l'UFC</a>
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

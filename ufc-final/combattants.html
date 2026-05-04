@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Les plus grands combattants de l'UFC – McGregor, Khabib, Adesanya, Jones, Nunes et plus."
+    />
+    <title>Les Combattants – UFC</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>" />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div id="progress-bar"></div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true">
+      <div class="lightbox-inner">
+        <button class="lightbox-close" id="lb-close" aria-label="Fermer">
+          ✕
+        </button>
+        <button class="lightbox-prev" id="lb-prev" aria-label="Précédent">
+          ‹
+        </button>
+        <button class="lightbox-next" id="lb-next" aria-label="Suivant">
+          ›
+        </button>
+        <img id="lb-img" src="" alt="" />
+        <p class="lightbox-caption" id="lb-caption"></p>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <header>
+      <nav class="navbar">
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menu">☰</button>
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 58" height="36" aria-label="UFC">
+            <text x="0" y="50" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-style="italic" font-size="62" fill="currentColor" letter-spacing="-3">UFC</text>
+          </svg>
+        </span>
+      </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="histoire.html" class="nav-link">Histoire</a></li>
+          <li><a href="combattants.html" class="nav-link">Combattants</a></li>
+          <li><a href="entrainement.html" class="nav-link">Entraînement</a></li>
+          <li><a href="categories.html" class="nav-link">Catégories</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-header">
+      <div class="page-header-bg"></div>
+      <h1>Les Combattants</h1>
+      <p>Les légendes qui ont marqué l'histoire de l'octogone</p>
+    </div>
+
+    <section class="section">
+      <p class="section-label">Hall of Fame</p>
+      <h2 class="section-title">Icônes de l'UFC</h2>
+      <div class="section-divider"></div>
+
+      <!-- SEARCH + FILTERS -->
+      <div class="search-wrap">
+        <input
+          type="text"
+          class="search-input"
+          id="fighter-search"
+          placeholder="Rechercher un combattant..."
+          autocomplete="off"
+        />
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="leger">Léger</button>
+          <button class="filter-btn" data-filter="moyen">Moyen</button>
+          <button class="filter-btn" data-filter="lourd">Lourd</button>
+          <button class="filter-btn" data-filter="feminin">Féminin</button>
+        </div>
+      </div>
+
+      <div class="fighters-container" id="fighters-grid">
+        <!-- 1 · McGregor -->
+        <div
+          class="fighter-card"
+          data-category="leger"
+          data-name="conor mcgregor"
+        >
+          <img
+            src="Images/Conor_Magregor.jpeg"
+            alt="Conor McGregor"
+            class="lb-trigger"
+            data-caption="Conor McGregor — The Notorious"
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Plumes · Léger</span>
+            <h2>Conor McGregor</h2>
+            <p>
+              Star mondiale de l'UFC, premier champion simultané dans deux
+              catégories. Son striking dévastateur et son charisme explosif en
+              ont fait la figure la plus médiatisée du MMA.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2 · Khabib -->
+        <div
+          class="fighter-card"
+          data-category="leger"
+          data-name="khabib nurmagomedov"
+        >
+          <img
+            src="Images/Khabib.jpeg"
+            alt="Khabib Nurmagomedov"
+            class="lb-trigger"
+            data-caption="Khabib Nurmagomedov — The Eagle — 29-0"
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Léger · 29-0</span>
+            <h2>Khabib Nurmagomedov</h2>
+            <p>
+              Invaincu avec 29 victoires. Maître absolu du grappling et de la
+              domination au sol, il est considéré comme le GOAT de la catégorie
+              légère. Retraité inviolé en 2020.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 · Adesanya -->
+        <div
+          class="fighter-card"
+          data-category="moyen"
+          data-name="israel adesanya"
+        >
+          <img
+            src="Images/Adesanya.jpeg"
+            alt="Israel Adesanya"
+            class="lb-trigger"
+            data-caption="Israel Adesanya — The Last Stylebender"
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Poids Moyen</span>
+            <h2>Israel Adesanya</h2>
+            <p>
+              Expert en striking au style unique inspiré du kickboxing et de la
+              danse. Sa précision chirurgicale et sa lecture du combat en font
+              un artiste de l'octogone incomparable.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 · Jon Jones -->
+        <div class="fighter-card" data-category="lourd" data-name="jon jones">
+          <img
+            src="Images/Jon_Jones.jpg"
+            alt="Jon Jones"
+            class="lb-trigger"
+            data-caption="Jon Jones — Bones — Champion Poids Lourds"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/400x500/111/e8001d?text=Jon+Jones'
+            "
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Poids Lourd · Mi-Lourd</span>
+            <h2>Jon Jones</h2>
+            <p>
+              Considéré par beaucoup comme le plus grand combattant de tous les
+              temps. Champion des poids mi-lourds pendant des années, il est
+              passé aux poids lourds pour tout conquérir.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5 · Amanda Nunes -->
+        <div
+          class="fighter-card"
+          data-category="feminin"
+          data-name="amanda nunes"
+        >
+          <img
+            src="Images/Amanda_Nunes.webp"
+            alt="Amanda Nunes"
+            class="lb-trigger"
+            data-caption="Amanda Nunes — The Lioness — Double championne"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/400x500/111/e8001d?text=Amanda+Nunes'
+            "
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Plumes · Coq · Féminin</span>
+            <h2>Amanda Nunes</h2>
+            <p>
+              La reine de l'UFC féminin. Double championne simultanée dans deux
+              catégories, elle a battu les plus grandes combattantes de
+              l'histoire dont Ronda Rousey et Cris Cyborg.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6 · Anderson Silva -->
+        <div
+          class="fighter-card"
+          data-category="moyen"
+          data-name="anderson silva"
+        >
+          <img
+            src="Images/Anderson_Silva.jpeg"
+            alt="Anderson Silva"
+            class="lb-trigger"
+            data-caption="Anderson Silva — The Spider — Légende des Poids Moyens"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/400x500/111/e8001d?text=Anderson+Silva'
+            "
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Poids Moyen</span>
+            <h2>Anderson Silva</h2>
+            <p>
+              Détenteur du record de la plus longue série de victoires
+              consécutives à l'UFC (16). Son style de combat fluide et sa
+              précision en ont fait l'un des combattants les plus spectaculaires
+              de l'histoire.
+            </p>
+          </div>
+        </div>
+
+        <!-- 7 · Georges St-Pierre -->
+        <div
+          class="fighter-card"
+          data-category="moyen"
+          data-name="georges st-pierre gsp"
+        >
+          <img
+            src="Images/GSP.png"
+            alt="Georges St-Pierre"
+            class="lb-trigger"
+            data-caption="Georges St-Pierre — GSP — Double champion légendaire"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/400x500/111/e8001d?text=GSP'
+            "
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Mi-Moyen · Moyen</span>
+            <h2>Georges St-Pierre</h2>
+            <p>
+              Le combattant le plus complet de l'histoire. Double champion, il a
+              dominé la division des mi-moyens comme nul autre. GSP est
+              universellement respecté pour son éthique et son professionisme.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8 · Valentina Shevchenko -->
+        <div
+          class="fighter-card"
+          data-category="feminin"
+          data-name="valentina shevchenko"
+        >
+          <img
+            src="Images/Valentina_Shevchenko.png"
+            alt="Valentina Shevchenko"
+            class="lb-trigger"
+            data-caption="Valentina Shevchenko — Bullet — Ex-championne Mouche"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/400x500/111/e8001d?text=Valentina'
+            "
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Mouche · Féminin</span>
+            <h2>Valentina Shevchenko</h2>
+            <p>
+              Ancienne championne des poids mouches féminins, elle a défendu son
+              titre 7 fois. Kickboxeuse d'élite et tireuse d'exception, son
+              niveau technique est parmi les plus élevés du sport.
+            </p>
+          </div>
+        </div>
+
+        <!-- 9 · Francis Ngannou -->
+        <div
+          class="fighter-card"
+          data-category="lourd"
+          data-name="francis ngannou predator"
+        >
+          <img
+            src="Images/Francis_Ngannou.png"
+            alt="Francis Ngannou"
+            class="lb-trigger"
+            data-caption="Francis Ngannou — The Predator — Ex-Champion Poids Lourds UFC"
+            onerror="
+              this.src =
+                'https://via.placeholder.com/400x500/111/e8001d?text=Ngannou'
+            "
+          />
+          <div class="fighter-info">
+            <span class="fighter-badge">Poids Lourd 🇨🇲</span>
+            <h2>Francis Ngannou</h2>
+            <p>
+              Camerounais devenu champion du monde. Son histoire est l'une des
+              plus inspirantes du sport : de la rue à Yaoundé jusqu'au sommet de
+              l'UFC. Il détient le record du punch le plus puissant jamais
+              mesuré — 129 000 unités de force.
+            </p>
+          </div>
+        </div>
+
+        <div class="no-results" id="no-results">Aucun combattant trouvé 🥊</div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 58" height="28" aria-label="UFC">
+        <text x="0" y="50" font-family="Arial Black, Impact, sans-serif" font-weight="900" font-style="italic" font-size="62" fill="currentColor" letter-spacing="-3">UFC</text>
+      </svg>
+    </span>
+      <p>
+        © 2026 <strong>Uriel ADABRA</strong> — Projet ESGIS &nbsp;·&nbsp;
+        <a href="index.html">Retour à l'accueil</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/combattants.js"></script>
+  </body>
+</html>

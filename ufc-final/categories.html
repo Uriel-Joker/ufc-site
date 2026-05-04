@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Les catégories de poids UFC – Hommes et Femmes, champions actuels."
+    />
+    <title>Catégories de Poids – UFC</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div id="progress-bar"></div>
+    <button id="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <header>
+      <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 185 58"
+              height="36"
+              aria-label="UFC"
+            >
+              <text
+                x="0"
+                y="50"
+                font-family="Arial Black, Impact, sans-serif"
+                font-weight="900"
+                font-style="italic"
+                font-size="62"
+                fill="currentColor"
+                letter-spacing="-3"
+              >
+                UFC
+              </text>
+            </svg>
+          </span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="histoire.html" class="nav-link">Histoire</a></li>
+          <li><a href="combattants.html" class="nav-link">Combattants</a></li>
+          <li><a href="entrainement.html" class="nav-link">Entraînement</a></li>
+          <li><a href="categories.html" class="nav-link">Catégories</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-header">
+      <div class="page-header-bg"></div>
+      <h1>Catégories de Poids</h1>
+      <p>Chaque poids, ses règles, ses champions</p>
+    </div>
+
+    <section class="section">
+      <p class="section-label">Divisions</p>
+      <h2 class="section-title">Toutes les catégories</h2>
+      <div class="section-divider"></div>
+
+      <!-- GENDER TABS -->
+      <div class="gender-tabs">
+        <button class="gender-tab active" data-gender="hommes">Hommes</button>
+        <button class="gender-tab" data-gender="femmes">Femmes</button>
+      </div>
+
+      <!-- HOMMES -->
+      <div class="categories-grid" id="grid-hommes">
+        <div class="category-card" style="--cat-color: #e8001d">
+          <p class="cat-weight">265 lbs</p>
+          <p class="cat-name">Poids Lourds</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">Jon Jones <span class="cat-flag">🇺🇸</span></p>
+          <p class="cat-desc">
+            La division reine. Les géants de l'octogone s'affrontent sans limite
+            de poids supérieure. Un seul KO peut tout changer en un instant.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #ff6b35">
+          <p class="cat-weight">205 lbs</p>
+          <p class="cat-name">Mi-Lourds</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">
+            Aleksandar Rakic <span class="cat-flag">🇦🇹</span>
+          </p>
+          <p class="cat-desc">
+            Division spectaculaire alliant puissance et agilité. Jon Jones y a
+            régné des années avant de monter chez les poids lourds.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #f4a261">
+          <p class="cat-weight">185 lbs</p>
+          <p class="cat-name">Poids Moyens</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">
+            Dricus Du Plessis <span class="cat-flag">🇿🇦</span>
+          </p>
+          <p class="cat-desc">
+            L'une des divisions les plus profondes. Terrain de jeu d'Anderson
+            Silva et Israel Adesanya, deux des combattants les plus
+            spectaculaires de l'histoire.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #2ec4b6">
+          <p class="cat-weight">170 lbs</p>
+          <p class="cat-name">Mi-Moyens</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">
+            Belal Muhammad <span class="cat-flag">🇺🇸</span>
+          </p>
+          <p class="cat-desc">
+            Division légendaire dominée par GSP. Mélange parfait de vitesse,
+            technique et puissance — des combats souvent tactiquement brillants.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #3a86ff">
+          <p class="cat-weight">155 lbs</p>
+          <p class="cat-name">Poids Légers</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">
+            Islam Makhachev <span class="cat-flag">🇷🇺</span>
+          </p>
+          <p class="cat-desc">
+            La catégorie de Khabib et McGregor. L'une des plus suivies au monde
+            avec des combattants complets alliant vitesse explosive et grappling
+            de haut niveau.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #8338ec">
+          <p class="cat-weight">145 lbs</p>
+          <p class="cat-name">Plumes</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">
+            Ilia Topuria <span class="cat-flag">🇬🇪</span>
+          </p>
+          <p class="cat-desc">
+            Combattants explosifs et agiles. McGregor y a décroché son premier
+            titre UFC. Ilia Topuria est le nouveau visage dominant de cette
+            division.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #06d6a0">
+          <p class="cat-weight">135 lbs</p>
+          <p class="cat-name">Poids Coqs</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">
+            Merab Dvalishvili <span class="cat-flag">🇬🇪</span>
+          </p>
+          <p class="cat-desc">
+            Division de l'élite technique. Des combattants au cardio
+            exceptionnel qui maintiennent un rythme élevé sur 25 minutes sans
+            jamais baisser la garde.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #ffd166">
+          <p class="cat-weight">125 lbs</p>
+          <p class="cat-name">Poids Mouches</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Champion actuel</span>
+          <p class="cat-champion">
+            Brandon Royval <span class="cat-flag">🇺🇸</span>
+          </p>
+          <p class="cat-desc">
+            La division des combattants les plus rapides et les plus agiles de
+            l'UFC. Technique pure et vitesse de frappe impressionnante
+            caractérisent cette catégorie.
+          </p>
+        </div>
+      </div>
+
+      <!-- FEMMES -->
+      <div class="categories-grid" id="grid-femmes" style="display: none">
+        <div class="category-card" style="--cat-color: #ff006e">
+          <p class="cat-weight">145 lbs</p>
+          <p class="cat-name">Plumes Féminines</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Championne actuelle</span>
+          <p class="cat-champion">
+            Noche Cruz <span class="cat-flag">🇺🇸</span>
+          </p>
+          <p class="cat-desc">
+            Division créée pour accueillir les combattantes les plus imposantes.
+            Amanda Nunes y a aussi régné, ajoutant un deuxième titre à son
+            palmarès historique.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #fb5607">
+          <p class="cat-weight">135 lbs</p>
+          <p class="cat-name">Coqs Féminines</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Championne actuelle</span>
+          <p class="cat-champion">
+            Julianna Peña <span class="cat-flag">🇺🇸</span>
+          </p>
+          <p class="cat-desc">
+            La division fondatrice du MMA féminin à l'UFC, popularisée par Ronda
+            Rousey. Amanda Nunes y a ensuite régné sans partage pendant des
+            années.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #8338ec">
+          <p class="cat-weight">115 lbs</p>
+          <p class="cat-name">Pailles Féminines</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Championne actuelle</span>
+          <p class="cat-champion">
+            Zhang Weili <span class="cat-flag">🇨🇳</span>
+          </p>
+          <p class="cat-desc">
+            Division extrêmement compétitive. Zhang Weili y domine avec une
+            puissance de frappe et un grappling d'élite qui surprennent par leur
+            intensité pour cette catégorie de poids.
+          </p>
+        </div>
+
+        <div class="category-card" style="--cat-color: #3a86ff">
+          <p class="cat-weight">125 lbs</p>
+          <p class="cat-name">Mouches Féminines</p>
+          <div class="cat-divider"></div>
+          <span class="cat-champion-label">Championne actuelle</span>
+          <p class="cat-champion">
+            Alexa Grasso <span class="cat-flag">🇲🇽</span>
+          </p>
+          <p class="cat-desc">
+            Valentina Shevchenko a dominé cette division pendant 7 défenses de
+            titre consécutives avant qu'Alexa Grasso ne crée la surprise dans
+            une rivalité épique.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFOS RÈGLES -->
+    <section class="section scroll-anim" style="padding-top: 0">
+      <p class="section-label">Règles</p>
+      <h2 class="section-title">Comment se déroule un combat ?</h2>
+      <div class="section-divider"></div>
+      <div class="feature-grid">
+        <div class="feature-card" style="pointer-events: none">
+          <span class="feature-icon">⏱</span>
+          <h3>Durée</h3>
+          <p>
+            Combats non-titres : 3 rounds de 5 minutes. Combats de titre ou
+            main-event : 5 rounds de 5 minutes. 1 minute de repos entre chaque
+            round.
+          </p>
+        </div>
+        <div class="feature-card" style="pointer-events: none">
+          <span class="feature-icon">🏆</span>
+          <h3>Victoire</h3>
+          <p>
+            KO, TKO, soumission, décision des juges (unanime, partagée ou
+            majoritaire), disqualification ou abandon. Les juges notent chaque
+            round de 10 à 9.
+          </p>
+        </div>
+        <div class="feature-card" style="pointer-events: none">
+          <span class="feature-icon">🚫</span>
+          <h3>Interdictions</h3>
+          <p>
+            Coups à la nuque ou à l'arrière de la tête, coups aux yeux,
+            morsures, coups de genou sur un adversaire au sol, saisie de la
+            cage, et bien d'autres.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 185 58"
+          height="28"
+          aria-label="UFC"
+        >
+          <text
+            x="0"
+            y="50"
+            font-family="Arial Black, Impact, sans-serif"
+            font-weight="900"
+            font-style="italic"
+            font-size="62"
+            fill="currentColor"
+            letter-spacing="-3"
+          >
+            UFC
+          </text>
+        </svg>
+      </span>
+      <p>
+        © 2026 <strong>Uriel ADABRA</strong> — Projet ESGIS &nbsp;·&nbsp;
+        <a href="index.html">Retour à l'accueil</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/categories.js"></script>
+  </body>
+</html>

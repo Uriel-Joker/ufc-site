@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contactez-nous – Site UFC par Uriel ADABRA."
+    />
+    <title>Contact – UFC</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'><text y='52' font-family='Arial Black,Arial' font-weight='900' font-style='italic' font-size='58' fill='%23000' letter-spacing='-2'>UFC</text></svg>"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div id="progress-bar"></div>
+    <button id="back-to-top" aria-label="Retour en haut">↑</button>
+
+    <!-- Toast notification -->
+    <div class="toast" id="toast">✅ Message envoyé avec succès !</div>
+
+    <header>
+      <nav class="navbar">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Menu">
+          ☰
+        </button>
+        <a href="index.html" class="nav-logo">
+          <span class="logo-text">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 185 58"
+              height="36"
+              aria-label="UFC"
+            >
+              <text
+                x="0"
+                y="50"
+                font-family="Arial Black, Impact, sans-serif"
+                font-weight="900"
+                font-style="italic"
+                font-size="62"
+                fill="currentColor"
+                letter-spacing="-3"
+              >
+                UFC
+              </text>
+            </svg>
+          </span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Accueil</a></li>
+          <li><a href="histoire.html" class="nav-link">Histoire</a></li>
+          <li><a href="combattants.html" class="nav-link">Combattants</a></li>
+          <li><a href="entrainement.html" class="nav-link">Entraînement</a></li>
+          <li><a href="categories.html" class="nav-link">Catégories</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-header">
+      <div class="page-header-bg"></div>
+      <h1>Contact</h1>
+      <p>Une question, une suggestion ? Écrivez-moi.</p>
+    </div>
+
+    <section class="section scroll-anim">
+      <p class="section-label">Formulaire</p>
+      <h2 class="section-title">Envoyez un message à Uriel</h2>
+      <div class="section-divider"></div>
+
+      <div class="contact-grid">
+        <!-- INFO SIDE -->
+        <div class="contact-info">
+          <h2>Parlons MMA</h2>
+          <p>
+            Ce site est un projet académique réalisé à ESGIS Lomé. N'hésitez pas
+            à me contacter pour tout retour, suggestion ou simplement pour
+            parler UFC !
+          </p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <strong>Localisation</strong>
+              <span>Lomé, Togo</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🏫</div>
+            <div class="contact-detail-text">
+              <strong>École</strong>
+              <span>ESGIS – Développement d'applications</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">💻</div>
+            <div class="contact-detail-text">
+              <strong>Projet</strong>
+              <span>Site web sur l'UFC – HTML / CSS / JS</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon">🥊</div>
+            <div class="contact-detail-text">
+              <strong>Passion</strong>
+              <span>UFC · MMA · Sports de combat</span>
+            </div>
+          </div>
+
+          <!-- Mini map placeholder -->
+          <div
+            style="
+              margin-top: 32px;
+              background: var(--dark-2);
+              border: 1px solid var(--border);
+              border-radius: 9px;
+              padding: 28px;
+              text-align: center;
+            "
+          >
+            <p
+              style="
+                color: var(--muted);
+                font-family: &quot;Barlow Condensed&quot;, sans-serif;
+                font-size: 0.8rem;
+                font-weight: 700;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                margin-bottom: 8px;
+              "
+            >
+              Réalisé à
+            </p>
+            <p
+              style="
+                font-family: &quot;Bebas Neue&quot;, sans-serif;
+                font-size: 2rem;
+                letter-spacing: 0.1em;
+                color: var(--red);
+              "
+            >
+              Lomé, Togo 🇹🇬
+            </p>
+          </div>
+        </div>
+
+        <!-- FORM SIDE -->
+        <div class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-prenom">Prénom</label>
+              <input
+                type="text"
+                id="f-prenom"
+                placeholder="Votre prénom"
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="f-nom">Nom</label>
+              <input
+                type="text"
+                id="f-nom"
+                placeholder="Votre nom"
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input
+              type="email"
+              id="f-email"
+              placeholder="votre@email.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="f-sujet">Sujet</label>
+            <select id="f-sujet">
+              <option value="" disabled selected>Choisissez un sujet</option>
+              <option value="retour">Retour sur le site</option>
+              <option value="suggestion">Suggestion de contenu</option>
+              <option value="combat">Parlons UFC !</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="f-message">Message</label>
+            <textarea
+              id="f-message"
+              placeholder="Écrivez votre message ici..."
+            ></textarea>
+          </div>
+
+          <button class="form-submit" id="form-submit">
+            Envoyer le message
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span class="footer-logo">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 185 58"
+          height="28"
+          aria-label="UFC"
+        >
+          <text
+            x="0"
+            y="50"
+            font-family="Arial Black, Impact, sans-serif"
+            font-weight="900"
+            font-style="italic"
+            font-size="62"
+            fill="currentColor"
+            letter-spacing="-3"
+          >
+            UFC
+          </text>
+        </svg>
+      </span>
+      <p>
+        © 2026 <strong>Uriel ADABRA</strong> — Projet ESGIS &nbsp;·&nbsp;
+        <a href="index.html">Retour à l'accueil</a>
+      </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
