@@ -102,7 +102,7 @@ ufc-site/
 **Uriel ADABRA**
 - 🎓 Étudiant en Développement d'Applications — ESGIS Lomé, Togo
 - 📧 adabraemmanueluriel@gmail.com
-- 🐙 GitHub : [@uriel-adabra](https://github.com/uriel-joker)
+- 🐙 GitHub : [@uriel-joker](https://github.com/uriel-joker)
 
 ---
 
